@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>blog của tôi !!</title>
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+  #menu a {
+    color: #787878;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  #menu a:hover {
+    color: #ff0000;
+  }
+  #menu a:active {
+    font-weight: bold;
+    color: black;
+  }
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .box {
+    /*Viet tat: border: 1px solid #ff0000*/
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ff0000;
+  }
+  .box span {
+    color: green;
+    font-weight:bold;
+  }
+  .box {
+    float: left;
+    border-top-width: 3px;
+    width: 32.333333%;
+    height: 200px;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  .box.info {
+    border-color: #ff2589;
+  }
+  .box.contact {
+    border-color: #778899;
+  }
+  .box.learning {
+    border-color: #aa58aa;
+    margin-right: 0;
+  }
+  .info span {
+    color: #ff2589;
+  }
+  .contact span {
+    color: #778899;
+  }
+  .learning span {
+    color: #aa58aa;
+  }
+
+  .wrap {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  #menu {
+    margin: auto;
+    max-width: 35%;
+  }
+
+  .box:hover h2 {
+    display: none;
+  }
+
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div id="banner">
+      <img src="http://www.f-covers.com/namecovers/image/sad-girl.jpg" alt="girl cover"> <br>
+    </div>
+
+    <div id="menu">
+      <a href="ThucHanhSelector.html" target="_blank">Trang chủ</a>
+      <a href="Sizing.html" style ="font-weight:bold" target="_blank" >Giới thiệu</a>
+      <a target="_blank" href="https://www.google.com.vn/search?q=g%C3%A1i+xinh&biw=1366&bih=693&source=lnms&tbm=isch&sa=X&ved=0ahUKEwig5_qa56zSAhUCE5QKHVMyCAsQ_AUIBigB#tbm=isch&q=girl+cover&*&imgrc=_">Album ảnh</a>
+      <a href="ThucHanhSelector2.html" target="_blank">Bài đăng</a>
+    </div>
+    <h1>Họ và tên: Nguyễn Văn Rum</h1>
+
+    <div id="main-content">
+      <div class="box info">
+        <h2>Thông tin cơ bản</h2>
+        <p>Nick name <span>Rum Cộp</span></p>
+        <p>Giới tính <span>Nam</span></p>
+        <p>Ngày sinh <span>26/11/1998</span></p>
+      </div>
+
+      <div class="box contact">
+        <h2>Thông tin liên hệ</h2>
+        <p>Skype <span>rum123ken@gmail.com</span></p>
+        <p>Email <span>rum123ken@gmail.com</span></p>
+        <p>Di động <span>0934.869.973</span></p>
+      </div>
+
+      <div class="box learning">
+        <h2>Học vấn</h2>
+        <p>Trường <span>Đại học Sư phạm Kỹ thuật Thành phố Hồ Chí minh</span></p>
+        <p>Chuyên ngành <span>Công nghệ thông tin</span></p>
+        <p>Lĩnh vực chuyên môn <span>Lập trình web</span></p>
+      </div>
+    </div>
+
+
+  </div>
+</body>
+</html>

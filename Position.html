@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Thực hành Position</title>
+    <style media="screen">
+      body {
+        margin: auto;
+
+      }
+      .wrap {
+        height: 300vmin;
+        margin: auto;
+        width: 1000px;
+        position: relative;
+      }
+      .wrap h1{
+        text-align: center;
+      }
+      div.menu{
+        display: inline-block;
+        width: 10%;
+        height: 50%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 100000000000;
+        /*z-index chỉ mức độ ưu tiên khi dùng fixed or absolute. càng cao càng ưu tiên*/
+
+      }
+
+      .menu a{
+        display: block;
+        text-decoration: none;
+      }
+      #icon {
+        width: 50px;
+        position: fixed;
+        right: 145px;
+        bottom: 12px;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1 id="dautrang">Mình chào các bạn.</h1>
+      <div class="menu">
+        <a href="ThucHanhSelector.html" target="_blank">Trang chủ</a>
+        <a href="Sizing.html" style ="font-weight:bold" target="_blank" >Giới thiệu</a>
+        <a target="_blank" href="https://www.google.com.vn/search?q=g%C3%A1i+xinh&biw=1366&bih=693&source=lnms&tbm=isch&sa=X&ved=0ahUKEwig5_qa56zSAhUCE5QKHVMyCAsQ_AUIBigB#tbm=isch&q=girl+cover&*&imgrc=_">Album ảnh</a>
+        <a href="ThucHanhSelector2.html" target="_blank">Bài đăng</a>
+      </div>
+      <a href="#dautrang"><img  id="icon" src="http://icons.iconarchive.com/icons/raindropmemory/artificial-girl/512/Nocchi-icon.png" alt="icon"></a>
+    </div>
+  </body>
+</html>
