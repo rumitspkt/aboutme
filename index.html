@@ -63,7 +63,10 @@
 
   .wrap {
     max-width: 1000px;
+    min-height: 1000px;
     margin: auto;
+    position: relative;
+    overflow: hidden;
   }
 
   #menu {
@@ -73,6 +76,38 @@
 
   .box:hover h2 {
     display: none;
+  }
+
+  .clear{
+    clear: both;
+  }
+
+  @keyframes hovaten {
+    0%  {background-color: #febdbb;}
+    20%  {background-color: #fd8c88;}
+    40%  {background-color: #fd4c45;}
+    60%  {background-color: #fc1b13;}
+    80%  {background-color: #fd4c45;}
+    100%  {background-color: #fd8c88;}
+  }
+
+  .wrap h1{
+    animation: hovaten 5s linear infinite;
+  }
+
+  @keyframes tacgia {
+    0%  {opacity: 0;}
+    50% {transform: translateX(-170px); opacity: 1; transition: all 3s linear;}
+    100%{transform: translateX(-300px); opacity: 0; transition: all 3s 3s linear;}
+  }
+  .author{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: absolute;
+    right: -170px;
+    font-weight: bold;
+    animation: tacgia 15s linear infinite;
+
   }
 
 
@@ -113,6 +148,12 @@
         <p>Chuyên ngành <span>Công nghệ thông tin</span></p>
         <p>Lĩnh vực chuyên môn <span>Lập trình web</span></p>
       </div>
+    </div>
+
+    <div class="clear"></div>
+
+    <div class="author">
+      <p>Created by Rum Nguyen</p>
     </div>
 
 
